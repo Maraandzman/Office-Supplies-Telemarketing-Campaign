@@ -48,3 +48,34 @@ GradientBoostingRegressor,RandomForestRegressor, Pipeline, StandardScaler,KFold
 # EDA
 
 ![](SuppliesCorr.png)
+
+# Model Development
+---
+Dummied all categoriacal variables after some feature engineering.
+
+50/50 Test size split
+
+
+**Classification to predict purchase:**
+
+Used Grid Search to attain the best params after scaling
+
+**Results:**
+
+
+
+![](confusion_matrix.png)
+
+**Regression:**
+
+Created Pipelines for the following for Neg mean squared error:
+
+- ScaledLR: -248688.862179 (44213.922746)
+- ScaledLASSO: -248475.771013 (44079.382808)
+- ScaledEN: -268812.702054 (52685.020150)
+- ScaledKNN: -240980.742861 (34378.570938)
+- ScaledCART: -93450.752264 (34049.827022)
+- ScaledGBM: -60184.298000 (11344.351406)
+- ScaledRFR: -58258.519118 (15000.863965)
+
+

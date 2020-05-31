@@ -47,3 +47,4 @@ GradientBoostingRegressor,RandomForestRegressor, Pipeline, StandardScaler,KFold
 
 # EDA
 
+![](SuppliesCorr.png)
